@@ -97,5 +97,9 @@ int main(int argc, char* argv[]) {
 			}
 			count ++;
 		}
+	free(header);
+	free(ether_h);
+	free(ip_h);
+	free(tcp_h);
 	pcap_close(pcap);
 }
